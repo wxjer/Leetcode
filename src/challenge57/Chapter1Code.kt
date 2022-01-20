@@ -26,5 +26,5 @@ fun main(args: Array<String>) {
 
 fun getInput(): Double? {
     val inputS = readLine()
-    return inputS.toDoubleOrNull();
+    return inputS?.toDoubleOrNull();
 }
