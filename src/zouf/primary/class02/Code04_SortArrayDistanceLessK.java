@@ -1,4 +1,4 @@
-package class02;
+package zouf.primary.class02;
 
 import java.util.PriorityQueue;
 

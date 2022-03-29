@@ -1,4 +1,4 @@
-package class05;
+package zouf.primary.class05;
 
 public class Code10_PaperFolding {
 

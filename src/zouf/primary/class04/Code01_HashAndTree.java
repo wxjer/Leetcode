@@ -1,4 +1,4 @@
-package class04;
+package zouf.primary.class04;
 
 import java.util.Comparator;
 import java.util.HashMap;

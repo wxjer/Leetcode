@@ -1,4 +1,4 @@
-package class07;
+package zouf.primary.class07;
 
 import java.util.Comparator;
 import java.util.PriorityQueue;

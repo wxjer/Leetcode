@@ -1,4 +1,4 @@
-package class08;
+package zouf.primary.class08;
 
 public class Code06_ConvertToLetterString {
 

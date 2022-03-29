@@ -1,4 +1,4 @@
-package class05;
+package zouf.primary.class05;
 
 import java.util.Stack;
 

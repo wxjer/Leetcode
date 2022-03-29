@@ -1,4 +1,4 @@
-package class03;
+package zouf.primary.class03;
 
 import java.util.Arrays;
 

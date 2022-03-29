@@ -1,4 +1,4 @@
-package class06;
+package zouf.primary.class06;
 public class Edge {
 	public int weight;
 	public Node from;

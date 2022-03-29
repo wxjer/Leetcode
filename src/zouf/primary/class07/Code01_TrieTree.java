@@ -1,4 +1,4 @@
-package class07;
+package zouf.primary.class07;
 
 public class Code01_TrieTree {
 

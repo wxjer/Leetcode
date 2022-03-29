@@ -1,4 +1,4 @@
-package class07;
+package zouf.primary.class07;
 
 import java.util.Arrays;
 import java.util.Comparator;

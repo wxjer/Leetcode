@@ -1,4 +1,4 @@
-package class02;
+package zouf.primary.class02;
 
 public class Code05_NetherlandsFlag {
 

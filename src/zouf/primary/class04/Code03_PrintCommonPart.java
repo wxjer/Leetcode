@@ -1,4 +1,4 @@
-package class04;
+package zouf.primary.class04;
 
 public class Code03_PrintCommonPart {
 
