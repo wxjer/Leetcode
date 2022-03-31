@@ -1,4 +1,4 @@
-package zouf.code01;
+package zouf.primary.class01;
 
 public class Code07_EvenTimesOddTimes {
 
