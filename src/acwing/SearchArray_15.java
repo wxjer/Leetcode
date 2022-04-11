@@ -23,7 +23,7 @@ import com.sun.org.apache.xalan.internal.xsltc.util.IntegerArray;
  *
  * 如果输入查找数值为5，则返回false。
  */
-class Solution15 {
+class SearchArray_15 {
 
     public static void main(String[] args) {
         int[][] array = new int[4][4];

@@ -15,11 +15,7 @@ import java.util.HashSet;
  * 返回 2 或 3。
  * 思考题：如果只能使用 O(1) 的额外空间，该怎么做呢？
  */
-public class DuplicateInArray2 {
-    public static void main(String[] args) {
-
-    }
-
+public class DuplicateInArray2_14 {
     public int duplicateInArray(int[] nums) {
         HashSet<Integer> set = new HashSet<>();
         for (int i = 0; i < nums.length; i++) {

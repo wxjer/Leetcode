@@ -12,7 +12,7 @@ package acwing;
  *
  * 输出："We%20are%20happy."
  */
-class Solution16 {
+class ReplaceSpaces_16 {
 
     public static void main(String[] args) {
         System.out.println(replaceSpaces(new StringBuffer(" h jPW5a   y rZ 4 6E")));
