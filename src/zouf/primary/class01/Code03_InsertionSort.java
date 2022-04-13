@@ -14,6 +14,22 @@ public class Code03_InsertionSort {
 			}
 		}
 	}
+	public static void insertionSort2(int[] arr) {
+		if (arr == null || arr.length < 2) {
+			return  ;
+		}
+		for (int i = 0; i < arr.length; i++) {
+			int minIndex = i;
+			for (int j = i + 1; j >= 0&&j<arr.length; j--) {
+				if (arr[i] > arr[j]) {
+					minIndex = j;
+				}
+			}
+			if (minIndex != i) {
+				swap(arr, minIndex, i);
+			}
+		}
+	}
 
 	public static void swap(int[] arr, int i, int j) {
 		arr[i] = arr[i] ^ arr[j];
@@ -86,7 +102,7 @@ public class Code03_InsertionSort {
 		for (int i = 0; i < testTime; i++) {
 			int[] arr1 = generateRandomArray(maxSize, maxValue);
 			int[] arr2 = copyArray(arr1);
-			insertionSort(arr1);
+			insertionSort2(arr1);
 			comparator(arr2);
 			if (!isEqual(arr1, arr2)) {
 				succeed = false;

@@ -25,7 +25,6 @@ public class DuplicateInArray2_14 {
         }
         return -1;
     }
-
 }
 
 
