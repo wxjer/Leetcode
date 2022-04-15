@@ -16,17 +16,13 @@ public class Code03_InsertionSort {
 	}
 	public static void insertionSort2(int[] arr) {
 		if (arr == null || arr.length < 2) {
-			return  ;
+			return;
 		}
-		for (int i = 0; i < arr.length; i++) {
-			int minIndex = i;
-			for (int j = i + 1; j >= 0&&j<arr.length; j--) {
-				if (arr[i] > arr[j]) {
-					minIndex = j;
+		for (int i = 1; i < arr.length; i++) {
+			for (int j = i - 1; j >= 0 ; j--) {
+				if (arr[j+1] < arr[j]) {
+					swap(arr, j, j+1);
 				}
-			}
-			if (minIndex != i) {
-				swap(arr, minIndex, i);
 			}
 		}
 	}
@@ -111,10 +107,10 @@ public class Code03_InsertionSort {
 		}
 		System.out.println(succeed ? "Nice!" : "Fucking fucked!");
 
-		int[] arr = generateRandomArray(maxSize, maxValue);
-		printArray(arr);
-		insertSort2(arr);
-		printArray(arr);
+//		int[] arr = generateRandomArray(maxSize, maxValue);
+//		printArray(arr);
+//		insertSort2(arr);
+//		printArray(arr);
 	}
 
 	public static  void insertSort2(int[] arr){

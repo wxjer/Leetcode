@@ -4,7 +4,7 @@ public class Test {
 
 
     public static void main(String[] args) {
-        int[] origin = generateRandomArray(5, 5);
+        int[] origin = generateRandomArray(20, 100);
         printArray(origin);
         insert(origin);
         printArray(origin);
@@ -26,18 +26,13 @@ public class Test {
         if (arr == null || arr.length < 2) {
             return;
         }
-        for (int i = 0; i < arr.length; i++) {
-            int minIndex = i;
-            for (int j = i + 1; j >= 0 && j < arr.length; j--) {
-                if (arr[i] > arr[j]) {
-                    minIndex = j;
+        for (int i = 1; i < arr.length; i++) {
+            for (int j = i - 1; j >= 0 ; j--) {
+                if (arr[j+1] < arr[j]) {
+                    swap(arr, j, j+1);
                 }
             }
-            if (minIndex != i) {
-                swap(arr, minIndex, i);
-            }
         }
-
     }
 
 
