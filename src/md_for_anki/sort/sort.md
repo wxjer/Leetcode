@@ -152,4 +152,46 @@
 	}
 ```
 
-## 
+## 小和问题 逆序对问题
+
+```java
+        public int smallSum(int[] arr) {
+            if (arr == null || arr.length == 0) {
+                return 0;
+            }
+            return mergeSort(arr, 0, arr.length - 1);
+        }
+
+        private int mergeSort(int[] arr, int l, int r) {
+            if (l == r) {
+                return 0;
+            }
+            int mid = (l + r) / 2;
+            int left = mergeSort(arr, l, mid);
+            int right = mergeSort(arr, mid + 1, r);
+            return left+right+merge(arr, l, mid, r);
+        }
+
+        private int merge(int[] arr, int l, int mid, int r) {
+            int[] help = new int[r - l + 1];
+            int p1= l;
+            int p2 = mid + 1;
+            int i = 0;
+            int sum = 0;
+            while (p1 <= mid && p2 <= r) {
+                sum += arr[p1]>arr[p2]?0:arr[p1]*(r-p2+1);
+                help[i++] = arr[p1]<arr[p2]?arr[p1++]:arr[p2++];
+            }
+            while (p1 <= mid) {
+                help[i++] = arr[p1++];
+            }
+            while (p2 <= r) {
+                help[i++] = arr[p2++];
+            }
+            for (int j = 0; j < help.length; j++) {
+                arr[l + j] = help[j];
+            }
+            return sum;
+        }
+```
+
