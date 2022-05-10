@@ -8,9 +8,15 @@ public class Code03_HeapSort {
 		if (arr == null || arr.length < 2) {
 			return;
 		}
-		for (int i = 0; i < arr.length; i++) {
-			heapInsert(arr, i);
+//		for (int i = 0; i < arr.length; i++) {
+//			heapInsert(arr, i);//采用heapinsert的复杂度为logN
+//		}
+		//采用从底层heapify的方式构建堆，优化这步骤的复杂度为N
+		for (int i = arr.length-1; i >=0 ; i--) {
+			heapify(arr,i,arr.length);
 		}
+		//而这个while循环，时间复杂度一定是nlogN,所以最终时间复杂度还是不变，
+		// 仅仅优化了第一步
 		int size = arr.length;
 		swap(arr, 0, --size);
 		while (size > 0) {
